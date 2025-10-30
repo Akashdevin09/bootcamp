@@ -1,0 +1,53 @@
+<svg width="300" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <defs>
+    <linearGradient id="posterGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7400b8" />
+      <stop offset="50%" stop-color="#6930c3" />
+      <stop offset="100%" stop-color="#5e60ce" />
+    </linearGradient>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="5" />
+    </filter>
+  </defs>
+  <rect width="300" height="400" fill="url(#posterGradient)" />
+  
+  <!-- Animated Particles -->
+  <g filter="url(#blur)">
+    <circle cx="50" cy="80" r="15" fill="#80ffdb" opacity="0.6">
+      <animate attributeName="cy" from="80" to="100" dur="3s" repeatCount="indefinite" />
+      <animate attributeName="opacity" from="0.6" to="0.3" dur="3s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="200" cy="120" r="20" fill="#64dfdf" opacity="0.5">
+      <animate attributeName="cy" from="120" to="140" dur="4s" repeatCount="indefinite" />
+      <animate attributeName="opacity" from="0.5" to="0.2" dur="4s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="100" cy="200" r="25" fill="#48bfe3" opacity="0.4">
+      <animate attributeName="cy" from="200" to="220" dur="5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" from="0.4" to="0.1" dur="5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="250" cy="250" r="18" fill="#56cfe1" opacity="0.5">
+      <animate attributeName="cy" from="250" to="270" dur="3.5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" from="0.5" to="0.2" dur="3.5s" repeatCount="indefinite" />
+    </circle>
+  </g>
+  
+  <!-- Action Elements -->
+  <path d="M150,150 L200,200 L100,200 Z" fill="#f72585" />
+  <circle cx="150" cy="130" r="30" fill="#b5179e" />
+  <rect x="140" y="200" width="20" height="40" fill="#7209b7" />
+  
+  <!-- Explosion Effect -->
+  <g opacity="0.8">
+    <path d="M150,180 L170,160 L190,180 L170,200 Z" fill="#f72585" />
+    <path d="M150,180 L130,160 L110,180 L130,200 Z" fill="#f72585" />
+    <path d="M150,180 L170,200 L150,220 L130,200 Z" fill="#f72585" />
+    <path d="M150,180 L170,160 L150,140 L130,160 Z" fill="#f72585" />
+  </g>
+  
+  <!-- Title Area -->
+  <rect x="20" y="300" width="260" height="90" fill="rgba(0,0,0,0.6)" />
+  <text x="150" y="330" font-family="Arial" font-size="22" fill="white" text-anchor="middle" font-weight="bold">The Latest Blockbuster</text>
+  <text x="150" y="355" font-family="Arial" font-size="14" fill="#aaa" text-anchor="middle">2023 | Action, Adventure | HD</text>
+  <text x="150" y="380" font-family="Arial" font-size="14" fill="#f72585" text-anchor="middle">★★★★★</text>
+</svg>
